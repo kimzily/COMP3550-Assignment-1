@@ -1,0 +1,49 @@
+// replace the items denoted within <> delimiters to the values desired
+function validateForm() {
+    var x = document.<Formname>.<Fieldname>.value;
+    if (x == null || x == "") {
+        alert("<field> must be filled out");
+        return false;
+    }
+}
+
+function validateEmail()
+{
+ 
+   var emailID = document.<Formname>.Email.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter a valid email ID")
+       document.myForm.Email.focus() ;
+       return false;
+   }
+}
+
+// to validate if text entered contains numbers only
+ var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        function IsNumeric(e) {
+            var keyCode = e.which ? e.which : e.keyCode
+            var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+            document.getElementById("error").style.display = ret ? "none" : "inline";
+            return ret;
+        }
+
+function validatePhone(fld) {
+    var error = "";
+    var stripped = fld.value.replace(/[\(\)\.\-\ ]/g, '');     
+
+   if (fld.value == "") {
+        error = "You didn't enter a phone number.\n";
+        fld.style.background = 'Yellow';
+    } else if (isNaN(parseInt(stripped))) {
+        error = "The phone number contains illegal characters.\n";
+        fld.style.background = 'Yellow';
+    } else if (!(stripped.length == 10)) {
+        error = "The phone number is the wrong length. Make sure you included an area code.\n";
+        fld.style.background = 'Yellow';
+    } 
+    return error;
+}
