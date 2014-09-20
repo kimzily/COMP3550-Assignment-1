@@ -87,3 +87,50 @@ body {
     border-bottom: 0;
   }
 }
+textarea {
+		width: 255px;
+		height: 8em;
+		border-radius: 5px;
+		border:1px solid #CCC;
+}
+
+.dropmenu{
+		width:250px;
+		margin-bottom:5px;
+		line-height:18px;
+		padding:5px 5px;
+		border-radius: 5px;
+		border:1px solid #CCC;
+}
+#form input {
+		width:250px;
+		margin-bottom:5px;
+		line-height:18px;
+		padding:5px 5px;
+		border-radius: 5px;
+		border:1px solid #CCC;
+}
+
+#form input[type=tel] {
+		width:150px;
+}
+
+#form input[type=button] {
+		width:250px;
+		margin-bottom:5px;
+		line-height:18px;
+		padding:5px 5px;
+		border-radius: 5px;
+		border:1px solid #CCC;
+}
+label.field{
+		text-align:left;
+		width:400px;
+		padding-right: 10px;
+		padding-left:20px;
+		float:left;
+		font-size:16px;
+		line-height:24px;
+		font-family: times new roman;
+
+}
