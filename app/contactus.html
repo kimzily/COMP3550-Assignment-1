@@ -42,22 +42,51 @@
 
 
 	<div class="formedit">
-		<form id="form" name="ContactUs" name="Email" onsubmit="return validateEmail()" method="post">
+		<form  class="form-horizontal" role="form" id="form" name="ContactUs" name="Email" onsubmit="return validateEmail()" method="post">
 	<fieldset>
-	<legend><u>All (*) fields are required</u></legend>
+	<legend>Contact Us</legend>
 	
 	
-		<label class="field" for="name">* Full Name:  </label><input id="name" type="text" placeholder="Name"></br>
-				
+		<label class="field" for="name">Full Name:  </label>
+		
+    <div class="required-field-block">
+            <input type="text" placeholder="Name" class="form-control">
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div>
+
+
 		<label class="field" for="companyname">Company/Business Name:  </label> <input id="CompanyName" type="text" placeholder="Company/Business Name" ></br>
 		
-		<label class="field" for="email">*Email Address:  </label><input id="email" type="email" placeholder="Email Address"></br>	
+		<label class="field" for="email">Email Address:</label>
+
+    <div class="required-field-block">
+            <input type="text" placeholder="Email Address" class="form-control">
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div></br>
 		
-				<label class="field"> Sex: </label></br>
-				<label for="male"> Male</label> <input class="ckbox" type="radio" name="sex" id="male">
-			    <label for="female">Female</label> <input class="ckbox" type="radio" name="sex" id="female"><br></br>
+				<label class="field"> Sex: </label>
+				<div class="form-group">
+          <div class="col-md-1">
+                <div class="checkbox">
+                  <label>
+                     <input type="checkbox">Male 
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+      <br>
 				
-		<label class="field" for="country">*Country:  </label><select name="country" class="dropmenu">
+		<label class="field" for="country">Country:  </label><select name="country" class="dropmenu">
 						<option value="">Country...</option>		
   						<option value="Algeria">Algeria</option>
   						<option value="Angola">Angola</option>
@@ -146,20 +175,43 @@
 													<option value="Argentina">PHD</option>
 													</select></br></br></br>
 													
-					<label class="field">Do you believe the main cause of poverty is lack of education?</label></br>
-							<label for="Yes">Yes</label> <input class="ckbox" type="radio" name="lackof" id="yes">
+					<label class="field">Do you believe the main cause of poverty is lack of education?</label>
+					<div class="form-group">
+             <div class="col-md-1">
+                <div class="checkbox">
+                  <label>
+                     <input type="checkbox">Yes
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox">No
+                    </label>
+                </div>
+            </div>
+          </div>
 							
-							<label for="No">No</label> <input class="ckbox" type="radio" name="lackof" id="no">
-							</br></br>
-							
-		<label class="field">Has poverty had an effect on you (whether first hand or someone you know?</label></br>
-							<label for="Yes">Yes</label> <input class="ckbox" type="radio" name="lackof" id="yes">
-							
-							<label for="No">No</label> <input class="ckbox" type="radio" name="lackof" id="no">
-							</br></br>
-							
-		<label class="field"></br></br> If yes, can you state how it has affected you and if it still affects you today.</label>	
-		</br></br>
+		<label class="field">Has poverty had an effect on you (whether first hand or someone you know?</label>
+         <div class="form-group">
+             <div class="col-md-1">
+                <div class="checkbox">
+                  <label>
+                     <input type="checkbox">Yes
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox">No
+                    </label>
+                </div>
+            </div>
+          </div>
+</br>
+		
+    <label class="field"> If yes, can you state how it has affected you and if it still affects you today.</label>	
+		
 		<textarea name="ifyes" ></textarea>
 		</br></br>
 		
@@ -167,20 +219,26 @@
 		<label class="field" for="findings">How did you first hear about Our Site?  </label><input id="findings" type="text" ></br></br>
 		
 		<label class="field" for="Enquiry"></br></br>
-					*We would like to know your views on poverty and what you would do to help 
+					We would like to know your views on poverty and what you would do to help 
 					reduce poverty in your area.	
 		</label>
 		</br></br>
-		<textarea name="enquiry" placeholder="Leave comments here" ></textarea>
-		</br></br>
+
+     <div class="required-field-block">
+            <textarea  placeholder="Leave comments here"></textarea>
+            <div class="required-icon">
+                <div class="text">*</div>
+            </div>
+        </div>
 		
-		 <p align="center"><input type = "submit" value="Submit">
+		</br></br>
+		<div class="col-md-6 col-md-offset-3"><button class="btn btn-info btn-block">Submit</button></div>
+		 
 		
 		
 		</fieldset>
 		</form>
 	</div>
-<<<<<<< HEAD
 	
 		<div align="center">
 		<table>
