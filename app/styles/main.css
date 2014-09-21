@@ -125,9 +125,8 @@ textarea {
 }
 label.field{
 		text-align:left;
-		width:250px;
-		padding-right: 10px;
-		padding-left: 50px;
+		width:290px;
+		padding-left: 40px;
 		float:left;
 		font-size:16px;
 		line-height:24px;
@@ -135,6 +134,5 @@ label.field{
 
 }
 .ckbox{
-		margin-left:-110px;
-		
+		margin-left:-115px;
 }
