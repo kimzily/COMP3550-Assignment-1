@@ -160,7 +160,7 @@
       </div>
 <<<<<<< HEAD
 	<div class="formedit">
-		<form id="form" name="ContactUs" >
+		<form id="form" name="ContactUs" name="Email" onsubmit="return validateEmail()" method="post">
 	<fieldset>
 	<legend><u>All (*) fields are required</u></legend>
 	
@@ -171,9 +171,9 @@
 		
 		<label class="field" for="email">*Email Address:  </label><input id="email" type="email" placeholder="Email Address"></br>	
 		
-				Sex: </br>
-				<label for="male"> Male</label> <input type="radio" name="sex" id="male">
-			    <label for="female">Female</label> <input type="radio" name="sex" id="female"><br>
+				<label class="field"> Sex: </label></br>
+				<label for="male"> Male</label> <input class="ckbox" type="radio" name="sex" id="male">
+			    <label for="female">Female</label> <input class="ckbox" type="radio" name="sex" id="female"><br></br>
 				
 		<label class="field" for="country">*Country:  </label><select name="country" class="dropmenu">
 						<option value="">Country...</option>		
@@ -264,13 +264,13 @@
 													<option value="Argentina">PHD</option>
 													</select></br></br></br>
 													
-					Do you believe the main cause of poverty is lack of education?</br>
-							<label for="Yes">Yes</label> <input type="radio" name="lackof" id="yes">
+					<label class="field">Do you believe the main cause of poverty is lack of education?</label></br>
+							<label for="Yes">Yes</label> <input class="ckbox" type="radio" name="lackof" id="yes">
 							
-							<label for="No">No</label> <input type="radio" name="lackof" id="no">
+							<label for="No">No</label> <input class="ckbox" type="radio" name="lackof" id="no">
 							</br></br>
 		
-		</br>
+		</br></br>
 		<label class="field" for="findings">How did you first hear about Our Site?  </label><input id="findings" type="text" ></br>
 		
 		<label class="field" for="Enquiry">
