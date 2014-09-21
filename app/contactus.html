@@ -37,15 +37,21 @@
 	<div class="formedit">
 		<form id="form" name="ContactUs" >
 	<fieldset>
-	<p class="required"><u>All (*) fields are required</u></p>
+	<legend><u>All (*) fields are required</u></legend>
+	
 	
 		<label class="field" for="name">* Full Name:  </label><input id="name" type="text" placeholder="Name"></br>
 				
 		<label class="field" for="companyname">Company/Business Name:  </label> <input id="CompanyName" type="text" placeholder="Company/Business Name" ></br>
+		
+		<label class="field" for="email">*Email Address:  </label><input id="email" type="email" placeholder="Email Address"></br>	
+		
+				Sex: </br>
+				<label for="male"> Male</label> <input type="radio" name="sex" id="male">
+			    <label for="female">Female</label> <input type="radio" name="sex" id="female"><br>
 				
 		<label class="field" for="country">*Country:  </label><select name="country" class="dropmenu">
-						<option value="">Country...</option>
-						  						<option value="Select">Select</option>
+						<option value="">Country...</option>		
   						<option value="Algeria">Algeria</option>
   						<option value="Angola">Angola</option>
   						<option value="Argentina">Argentina</option>
@@ -120,11 +126,26 @@
   						<option value="Yugoslavia">Yugoslavia</option>
   						<option value="Zambia">Zambia</option>
   					</select></br>
-				
-		<label class="field" for="contact">Telephone Contact (***-***-****):  </label><input id="contact" type="tel" placeholder="Contact" ></br>
 		
-		<label class="field" for="email">*Email Address:  </label><input id="email" type="email" placeholder="Email Address"></br>	
-				
+		<label class="field">What is your level of education:</label>
+												<select name="education" class="dropmenu">
+													<option value="">Select</option>
+													<option value="Australia">Primary</option>
+													<option value="Australia">Some Secondary</option>
+													<option value="Australia">Secondary</option>
+													<option value="Select">Some University</option>
+													<option value="Algeria">Bachelors</option>
+													<option value="Angola">Masters</option>
+													<option value="Argentina">PHD</option>
+													</select></br></br></br>
+													
+					Do you believe the main cause of poverty is lack of education?</br>
+							<label for="Yes">Yes</label> <input type="radio" name="lackof" id="yes">
+							
+							<label for="No">No</label> <input type="radio" name="lackof" id="no">
+							</br></br>
+		
+		</br>
 		<label class="field" for="findings">How did you first hear about Our Site?  </label><input id="findings" type="text" ></br>
 		
 		<label class="field" for="Enquiry">
@@ -132,10 +153,11 @@
 					more information on, or any general
 					comments you may have.	
 		</label>
+		</br></br>
 		<textarea name="enquiry" placeholder="Enquiry" ></textarea>
 		</br></br>
 		
-		<p align="center"><input type = "submit" value="Submit"><button type="button" onclick="alert('Thank you for registering!')">Submit</button></p>
+		 <p align="center"><input type = "submit" value="Submit">
 		
 		
 		</fieldset>
@@ -158,6 +180,7 @@
 			</tr>
 		</table>
 	</div>
+	<a href="index.html">Return to Home Page</a>
      
 
 
